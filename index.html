@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Крестики-нолики</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container">
+  <h1>Крестики-нолики</h1>
+  <section>
+    <h2>
+      Логическая игра между двумя противниками
+    </h2>
+    <p>
+      Текущий ход: <span id="currentStep">1</span>
+    </p>
+    <p>
+      Ходит: <span id="currentPlayerName">Игрок 1</span>
+    </p>
+    <table class="score">
+      <thead>
+        <tr class="score__row">
+          <th class="score__col">
+            Первый игрок
+          </th>
+          <th class="score__col">
+            Второй игрок
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="score__row">
+          <th class="score__col">
+            <span id="player1score">0</span>
+          </th>
+          <th class="score__col">
+            <span id="player2score">0</span>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+
+    <canvas id="gameCanvas" width="300" height="300"></canvas>
+
+    <div class="btns">
+      <button id="resetBtn" class="btn btn--reset">Сброс</button>
+      <button id="newGameBtn" class="btn btn--new">Новая игра</button>
+    </div>
+  </section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>

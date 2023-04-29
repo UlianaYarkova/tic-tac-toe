@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+canvas {
+  margin-top: 1rem;
+  border: 1px solid #000;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.score {
+  width: 100%;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: 600;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn--new {
+  background-color: green;
+  color: white;
+}
+
+.btn--reset {
+  background: red;
+  color: white;
+}
